@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Upcoming Sports Events in Hyderabad</title>
+    <link rel="stylesheet" href="sports.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"></link>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="total-body">
+        <header class="header w-100">
+            <div class="first-nav bg-secondary w-100">
+                <div class="first-nav-content h-100 mx-auto">
+                    <div class="first-nav-size h-100">
+                        <div class="first-nav-sections w-100 h-100 d-flex justify-content-between align-items-center">
+                            <div class="logo-search h-100 d-flex justify-content-start align-items-center">
+                                <a href="Home.html" class="mr-3">
+                                    <img src="logo-bms.svg" class="img-fluid">
+                                </a>
+                                <input type="search" placeholder="      Search for Movies, Events, Plays, Sports and Activities" class="rounded border-0">
+                            </div>
+                            <div class="buttons-icon d-flex justify-content-end align-items-center h-100">
+                                <button type="button" class="btn btn-secondary dropdown-toggle mr-3">Hyderabad</button>
+
+                                <div class="signin-button font-weight-bolder text-light text-center bg-danger rounded mr-3" data-bs-toggle="modal" data-bs-target="#signin">Sign In</div>
+                                 <!-- The Modal -->
+                                 <div class="modal fade" id="signin">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title">Get Started</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <!-- Modal Body -->
+                                            <div class="modal-body">
+                                                <div class="all-buttons mb-5">
+                                                    <div class="top-social-media">
+                                                        <div class="sm-logo">
+                                                            <img src="https://in.bmscdn.com/webin/common/icons/googlelogo.svg">
+                                                        </div>
+                                                        <div class="sm-text">Continue with Google</div>
+                                                    </div>
+                                                    <div class="top-social-media">
+                                                        <div class="sm-logo">
+                                                            <img src="https://in.bmscdn.com/webin/common/icons/email.svg">
+                                                        </div>
+                                                        <div class="sm-text">Continue with Email</div>
+                                                    </div>
+                                                    <div class="top-social-media">
+                                                        <div class="sm-logo">
+                                                            <i class="fa-brands fa-apple fa-xl"></i>
+                                                        </div>
+                                                        <div class="sm-text">Continue with Apple</div>
+                                                    </div>
+                                                    <div class="text-center">OR</div>
+                                                    <form class="phone">
+                                                        <div class="d-flex">
+                                                            <div>
+                                                                <img src="https://in.bmscdn.com/webin/common/icons/indianflag.svg">
+                                                            </div>
+                                                            <div>+91</div>
+                                                            <div class="mobile-num">
+                                                                <input type="text" placeholder="Continue with mobile number" pattern="[0-9]{10}">
+                                                            </div>
+                                                        </div> 
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- Modal Footer -->
+                                            <div class="pb-4">
+                                                <div class="d-flex justify-content-center align-items-center modalFooter">
+                                                    I agree to the &nbsp<a href="#" class="modalFooter"> Terms & Conditions </a>&nbsp & &nbsp<a href="#" class="modalFooter"> Privacy Policy</a>.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  Button to open the offcanvas sidebar -->
+                                <button type="button" class="btn btn-outline-none" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                                    <i class="fa-solid fa-bars fa-xl text-light"></i>
+                                </button>
+                            </div>
+
+                            <!-- Offcanvas Sidebar -->
+                            <div class="offcanvas offcanvas-end" id="demo">
+                                <div class="offcanvas-header bg-dark">
+                                    <h3 class="offcanvas-title text-light">Hey!</h3>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="d-flex justify-content-around align-items-center side-box">
+                                        <img src="rewards_login.png" class="img-fluid">
+                                        <p>Unlock special offers & <br>great benefits</p>
+                                        <a class="btn">Login/Register</a>
+                                    </div>
+                                    <div class="sidebar-body">
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://cdn-icons-png.flaticon.com/512/3119/3119338.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Notifications</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://assets-in.bmscdn.com/members/common/icons/purchasehistory.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Your Orders</p>
+                                                <p class="sub-text">View all your bookings & purchases</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://assets-in.bmscdn.com/members/common/icons/streamlibrary_2.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Stream Library</p>
+                                                <p class="sub-text">Rented & Purchased Movies</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://assets-in.bmscdn.com/members/common/icons/playcreditcard.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Play Credit Card</p>
+                                                <p class="sub-text">View your Play Credit Card details and offers</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://assets-in.bmscdn.com/members/common/icons/helpandsupport.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Help & Support</p>
+                                                <p class="sub-text">View commonly asked queries and Chat</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://assets-in.bmscdn.com/members/common/icons/accountandsettings.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Accounts & Settings</p>
+                                                <p class="sub-text">Location, Payments, Permissions & More</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                            <div>
+                                                <img src="https://assets-in.bmscdn.com/members/common/icons/rewards_1.png">
+                                            </div>
+                                            <div>
+                                                <p class="head-text">Rewards</p>
+                                                <p class="sub-text">View your rewards & Unlock new ones</p>
+                                            </div>
+                                        </div>
+                                        <div class="icons-text">
+                                           <div>
+                                               <img src="https://assets-in.bmscdn.com/members/common/icons/bookasmile.png">
+                                           </div>
+                                           <div>
+                                                <p class="head-text">BookASmile</p>
+                                           </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-nav w-100 bg-dark">
+                <div class="sec-nav-content h-100 mx-auto">
+                    <div class="sec-nav-size h-100 d-flex justify-content-between">
+                        <div class="left h-100 d-flex justify-content-start align-items-center">
+                            <div class="left-links w-100 d-flex justify-content-start align-items-center">
+                                <a href="Movies.html">Movies</a>
+                                <a href="Stream.html">Stream</a>
+                                <a href="Events.html">Events</a>
+                                <a href="Plays.html">Plays</a>
+                                <a href="Sports.html">Sports</a>
+                                <a href="Activities.html">Activities</a>
+                                <a href="#">Buzz</a>
+                                <img src="https://assets-in.bmscdn.com/static/2023/08/cwc23.png">
+                                <div class="new-word">NEW</div>
+                            </div>
+                        </div>
+
+                        <div class="right">
+                            <div class="right-links w-100 d-flex justify-content-start align-items-center">
+                                <a href="#" class="text-decoration-none font-weight-bolder">
+                                    ListYourShow
+                                </a>
+                                <a href="#" class="text-decoration-none font-weight-bolder">
+                                    Corporates
+                                </a>
+                                <a href="#" class="text-decoration-none font-weight-bolder">
+                                    Offers
+                                </a>
+                                <a href="#" class="text-decoration-none font-weight-bolder">
+                                    Gift Cards
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Image Top -->
+        <section class="w-100 pt-3 pb-3" style="background-color:lightgray;">
+            <div class="container">
+                <div style="cursor:pointer;">
+                    <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1693830350342_motogpdesktop.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Filters -->
+        <section class="sports-page w-100 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="total-filters-section">
+                            <h3 class="mt-5">Filters</h3>
+                            <div class="all-filters-sec mt-3">
+                                <div class="each-filter bg-white rounded mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex">
+                                            <div class="ml-3">
+                                                <i class="fa-solid fa-angle-down" data-bs-toggle="collapse" data-bs-target="#dateFilter" style="cursor:pointer;"></i>
+                                            </div>
+                                            <div class="ml-3">Date</div>
+                                        </div>
+                                        <div class="mr-3 mt-3">
+                                            <p>Clear</p>
+                                        </div>
+                                    </div>
+                                    <ul class="collapse list-unstyled ml-3 text-danger ul-li-items pb-3" id="dateFilter">
+                                        <li class="mr-4 border px-2 mt-2">Today</li>
+                                        <li class="mr-4 border px-2 mt-2">Tomorrow</li>
+                                        <li class="border px-2 mt-2">This Weekend</li>
+                                    </ul>
+                                </div>
+                                <div class="each-filter bg-white rounded mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex">
+                                            <div class="ml-3">
+                                                <i class="fa-solid fa-angle-down" data-bs-toggle="collapse" data-bs-target="#moreFilter" style="cursor:pointer;"></i>
+                                            </div>
+                                            <div class="ml-3">More Filters</div>
+                                        </div>
+                                        <div class="mr-3 mt-3">
+                                            <p>Clear</p>
+                                        </div>
+                                    </div>
+                                    <ul class="collapse list-unstyled ml-3 text-danger ul-li-items pb-3" id="moreFilter">
+                                        <li class="border mr-4 mt-2 px-2">Outdoor Events</li>
+                                        <li class="border mt-2 px-2">ICC Men's Cricket World Cup 2023</li>
+                                        <li class="border mr-4 mt-2 px-2">Online Streaming</li>
+                                        <li class="border mr-4 mt-2 px-2">Fast Filling</li>
+                                        <li class="border mr-4 mt-2 px-2">Kids Allowed</li> 
+                                    </ul>
+                                </div>
+                                <div class="text-danger border border-danger rounded text-center p-1" style="cursor:pointer;">
+                                    Browse by Venues
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="total-sports-sec">
+                            <h3 class="mt-5">Sports In Hyderabad</h3>
+                            <ul class="mt-3 list-unstyled d-flex flex-wrap text-danger ul-li-sports">
+                                <li class="border rounded-pill bg-white py-1 px-3">Cricket</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">Online Games</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">E Sports</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">Chess</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">Football</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">Motorsports</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">Running</li>
+                                <li class="border rounded-pill bg-white py-1 px-3">Online Sports</li>
+                            </ul>
+                            <div class="row mt-3 gy-4">
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCAyMiBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00361456-rsenguvlfp-portrait.jpg" class="img-fluid rounded">
+                                    <div class="mt-3 text-secondary">
+                                        <h6 class="text-dark">MotoGP Bharat 2023</h6>
+                                        <div>Buddh International Circuit</div>
+                                        <div>Moto GP</div>
+                                        <div>₹ 800 onwards</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCA5IE9jdA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367538-shdafjysub-portrait.jpg" class="img-fluid rounded">
+                                    <div class="mt-3 text-secondary">
+                                        <h6 class="text-dark">NEW ZEALAND vs NETHERLANDS</h6>
+                                        <div>Rajiv Gandhi Crcket</div>
+                                        <div>ODI</div>
+                                        <div>₹ 600 onwards</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VHVlLCAzIE9jdA%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00367536-fqwmxrnsfm-portrait.jpg" class="img-fluid rounded">
+                                    <div class="mt-3 text-secondary">
+                                        <h6 class="text-dark">PAKISTAN vs AUSTRALIA</h6>
+                                        <div>Rajiv Gandhi Crcket</div>
+                                        <div>ODI</div>
+                                        <div>₹ 750 onwards</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyNCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00348054-bmynwuvtuf-portrait.jpg" class="img-fluid rounded">
+                                    <div class="mt-3 text-secondary">
+                                        <h6 class="text-dark">All India Quick Chess Championship</h6>
+                                        <div>Watch on Zoom.</div>
+                                        <div>Chess</div>
+                                        <div>₹ 199</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxNiBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00336144-ndwuxjrepc-portrait.jpg" class="img-fluid rounded">
+                                    <div class="mt-3 text-secondary">
+                                        <h6 class="text-dark">All India Sudoku Championship (AISC)</h6>
+                                        <div>Watch on Zoom.</div>
+                                        <div>Online Games</div>
+                                        <div>₹ 149</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-6">
+                                    <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAxOCBTZXA%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00369049-ldaqwckwqh-portrait.jpg" class="img-fluid rounded">
+                                    <div class="mt-3 text-secondary">
+                                        <h6 class="text-dark">Mumbai City FC vs FC Nassaji Mazandaran</h6>
+                                        <div>Shree Shiv Chhatrapati</div>
+                                        <div>Football</div>
+                                        <div>₹ 499 onwards</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home To Sports -->
+        <section>
+            <div class="container">
+                <div class="d-flex text-secondary py-3">
+                    <div class="mr-1">Home</div>
+                    <div class="mr-1">&#8594;</div>
+                    <div>Sports</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Sports Page -->
+        <section class="about-sports">
+            <div class="container py-3">
+                <div class="w-100">
+                    <h4 class="headings-sports">Obtain Information About all Upcoming Sports Events In Hyderabad</h4>
+                </div>
+                <div class="w-100 mb-3">
+                    <div class="paragraphs-sports">
+                        India is a country where sportsperson receive immense love from fans and spectators. Sports lovers in this country are the prime 
+                        reason for the enormous popularity of almost all sports in India. Although <a class="text-danger text-decoration-none" href="#">Cricket</a> is a religion for the Indians, there is 
+                        a sizable fan base of other sports events. You will know about upcoming sports events near you in 2023 on BookMyShow. Apart from 
+                        obtaining detailed information, you can also book tickets for sports like cricket, football &amp; running happening in Hyderabad 
+                        without any hassle. You can take part and enjoy the experience live.
+                    </div>
+                </div>
+                <div class="w-100">
+                    <h4 class="headings-sports">Witness or Take Part in Different Adrenaline-Boosting Sports Match in Hyderabad</h4>
+                </div>
+                <div class="w-100 mb-3">
+                    <div class="paragraphs-sports">
+                        Witnessing live sports being at the stadium is a different experience altogether for the fans or sports lovers. On BookMyShow, 
+                        you will get information about different sports categories. Major sports tournaments and leagues that are going to take place 
+                        in Hyderabad in 2023 are expected to be updated soon, as they are the most enthralling events of the year.
+                    </div>
+                </div>
+                <div class="w-100 mb-3">
+                    <div class="paragraphs-sports">
+                        Sportsperson strive to deliver their best performance and entice spectators at the stadiums. No matter which sport makes you crazy, 
+                        you will be able to book sports event tickets hassle-free from our website and witness the matches in front of your eyes. 
+                        You can even take part in several <a>e-sports</a> and play online from the convenience of your home after booking the sports tickets or paying the registration fee.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <section class="text-light bg-secondary">
+                <div class="container">
+                    <div class="w-100 d-flex justify-content-start align-items-center pt-3 pb-3">
+                        <div>
+                            <img src="https://in.bmscdn.com/webin/common/icons/hut.svg" class="img-fluid pr-2">
+                        </div>
+                        <div class="font-weight-bolder mr-3 ml-1">List your Show</div>
+                        <div class="long-text">
+                            Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow
+                        </div>
+                        <div class="bg-danger rounded p-2">Contact today!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer-second w-100">
+                <div class="container">
+                    <div class="w-100 d-flex justify-content-around pt-3 pb-3">
+                        <a>
+                            <div>24/7 CUSTOMER CARE</div>
+                        </a>
+                        <a>
+                            <div>RESEND BOOKING CONFIRMATION</div>
+                        </a>
+                        <a>
+                            <div>SUBSCRIBE TO THE NEWSLETTER</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="movie-now w-100">
+                <div class="container">
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Movies Now Showing in Hyderabad</div>
+                        <div class="movie-title">
+                            <a href="#">Kushi</a> <a href="#">Jawan</a> <a href="#">Jailer</a> <a href="#">Dream Girl 2</a>
+                            <a href="#">Bedurulanka 2012</a> <a href="#">The Equalizer 3</a> <a href="#">Boys Hostel</a>
+                            <a href="#">OMG 2</a> <a href="#">Gadar 2: The Katha Continues</a>
+                            <a href="#" style="border: none;">Teenage Mutant Ninja Turtles: Mutant Mayhem</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Upcoming Movies in Hyderabad</div>
+                        <div class="movie-title">
+                            <a href="#">Miss Shetty Mr Polishetty</a> <a href="#">Thirayattam</a> <a href="#">Mukalparapp</a>
+                            <a href="#">Thurum Khanlu</a> <a href="#">Kaddha Chitra</a> <a href="#">Angaaragan</a>
+                            <a href="#">Vaathil</a> <a href="#">Brahmachari</a> <a href="#">Baanadariyalli</a>
+                            <a href="#" style="border: none;">Kasargold</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Movies by Genre</div>
+                        <div class="movie-title">
+                            <a href="#">Drama Movies</a> <a href="#">Action Movies</a> <a href="#">Comedy Movies</a>
+                            <a href="#">Thriller Movies</a> <a href="#">Romantic Movies</a> <a href="#">Adventure Movies</a>
+                            <a href="#">Crime Movies</a> <a href="#">Historical Movies</a> <a href="#">Animation Movies</a>
+                            <a href="#">Period Movies</a> <a href="#">Adaptation Movies</a> <a href="#">Mythological Movies</a>
+                            <a href="#">Noir Movies</a> <a href="#">Political Movies</a> <a href="#">Supernatural Movies</a>
+                            <a href="#">Sports Movies</a> <a href="#">Heist Movies</a> <a href="#">Tragedy Movies</a>
+                            <a href="#">Anime Movies</a> <a href="#" style="border: none;">Horror Movies</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Movie Reviews and Trending Articles</div>
+                        <div class="movie-title">
+                            <a class="#">Trending Articles</a> <a href="#">Latest News on Movies, Events, Plays and Sports</a>
+                            <a href="#" style="border: none;">Movie Celebrities</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Countries</div>
+                        <div class="movie-title">
+                            <a href="#">Indonesia</a> <a href="#">Singapore</a> <a href="#">UAE</a> <a href="#">Sri Lanka</a>
+                            <a href="#" style="border: none;">West Indies</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Help</div>
+                        <div class="movie-title">
+                            <a href="#">About Us</a> <a href="#">Contact Us</a> <a href="#">Current Opening</a> <a href="#">Press Release</a>
+                            <a href="#">Press Coverage</a> <a href="#">Sitemap</a> <a href="#">FAQs</a> <a href="#">Terms and Conditions</a>
+                            <a href="#" style="border: none;">Privacy policy</a>
+                        </div>
+                    </div>
+                    <div class="pt-4">
+                        <div class="movies-now-heading text-uppercase mb-3 font-weight-normal">Bookmyshow Exclusive</div>
+                        <div class="movie-title">
+                            <a href="#">Lollapalooza India</a> <a href="#">Superstar</a> <a href="#">BookASmile</a> <a href="#">Corporate Vochers</a>
+                            <a href="#">Gift Cards</a> <a href="#">List My Show</a> <a href="#">Offers</a> <a href="#">Stream</a>
+                            <a href="#">Buzz</a> <a href="#">Movie Trailers</a> <a href="#" style="border: none;">Summer Activities</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="footer-bottom w-100">
+                <div class="container">
+                    <div class="bms-logo d-flex justify-content-center align-items-center">
+                        <img src="logo-bms.svg">
+                    </div>
+                    <div class="social-media text-center">
+                        <a href="#" class="rounded-circle bg-light text-primary">
+                            <i class="fa-brands fa-facebook fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-info">
+                            <i class="fa-brands fa-twitter fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-danger">
+                            <i class="fa-brands fa-instagram fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-danger">
+                            <i class="fa-brands fa-youtube fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-warning">
+                            <i class="fa-brands fa-pinterest fa-xl"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-light text-success">
+                            <i class="fa-brands fa-whatsapp fa-xl"></i>
+                        </a>
+                    </div>
+                    <div class="text-center p-4">
+                        Copyright 2023 &#169 Bigtree Entertainment Pvt. Ltd. All Rights Reserved.
+                        <br>
+                        The content and images used on this site are copyright protected and copyrights vests with the respective
+                        owners. The usage of the content and images on this website is intended to promote the works and no endorsement 
+                        of the artist shall be implied. unauthorized use is prohibited and punishable by law.
+                    </div>
+                </div>
+            </footer>
+        </footer>
+    </div>
+</body>
+</html>
